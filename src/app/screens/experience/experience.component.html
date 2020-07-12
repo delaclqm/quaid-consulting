@@ -1,0 +1,29 @@
+<div id="experience" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-12 center-xs">
+            <h1 class="accent-font primary-text">My Experience & Education</h1>
+            <p class="lead">
+                I am still new to industry, but I am not afraid to experiment and grow myself
+                both professionally and technically.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="timeline-wrap">
+                <app-timeline-block *ngFor="let exp of experience" [content]="exp"></app-timeline-block>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="accent-font primary-text center-xs">Education</h2>
+            <div class="timeline-wrap">
+                <app-timeline-block *ngFor="let edu of education" [content]="edu"></app-timeline-block>
+            </div>
+        </div>
+    </div>
+</div>

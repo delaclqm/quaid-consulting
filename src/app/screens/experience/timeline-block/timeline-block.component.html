@@ -1,0 +1,18 @@
+    <div class="timeline-block">
+        <div class="timeline-ico mat-elevation-z4">
+            <img *ngIf="isEducation" src="{{content.image.url}}" alt="Logo">
+            <img *ngIf="!isEducation" src="{{content.companyImage.url}}" alt="Logo">
+        </div>
+        <div class="timeline-header">
+            <h3 *ngIf="!isEducation" class="accent-font">{{content.name}}</h3>
+            <h3 *ngIf="isEducation" class="accent-font">{{content.degree}}</h3>
+            <p>{{content.duration}}</p>
+        </div>
+        <div class="timeline-content">
+            <h3 *ngIf="!isEducation" class="accent-font accent-text">{{content.company}}</h3>
+            <h3 *ngIf="isEducation" class="accent-font accent-text">
+                {{content.name}} ({{content.city}}, {{content.state}})
+            </h3>
+            <p>{{content.description}}</p>
+        </div>
+    </div>

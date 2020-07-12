@@ -1,0 +1,46 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-blue, 300);
+$my-theme-accent: mat-palette($mat-green, A200, A100, A400);
+$my-theme-warn: mat-palette($mat-red);
+
+@mixin primary($theme) {
+    // Extract the palettes you need from the theme definition.
+    $primary: map-get($theme, primary);
+  
+    // Define any styles affected by the theme.
+    .primary {
+      // Use mat-color to extract individual colors from a palette.
+      background-color: mat-color($primary) !important;
+      color: #ffffff !important;
+    }
+    .primary-text {
+      color: mat-color($primary) !important;
+    }
+  }
+
+@mixin accent($theme) {
+  // Extract the palettes you need from the theme definition.
+  $accent: map-get($theme, accent);
+
+  // Define any styles affected by the theme.
+  .accent {
+    // Use mat-color to extract individual colors from a palette.
+    background-color: mat-color($accent) !important;
+    color: #000000;
+  }
+  .accent-hover:hover {
+    color: mat-color($accent) !important;
+  }
+  .accent-text {
+    color: mat-color($accent) !important;
+  }
+}
+
+// Create the theme object (a Sass map containing all of the palettes).
+$my-theme: mat-dark-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+@include angular-material-theme($my-theme);
+@include accent($my-theme);
+@include primary($my-theme);

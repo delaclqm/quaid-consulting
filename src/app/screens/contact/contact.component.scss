@@ -1,0 +1,19 @@
+.full-width {
+    width: 100%;
+}
+
+.form {
+    position: relative;
+    transition: 1s;
+}
+
+.loading {
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+mat-spinner {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}

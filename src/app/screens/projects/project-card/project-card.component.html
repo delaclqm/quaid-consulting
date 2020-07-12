@@ -1,0 +1,18 @@
+<mat-card class="project-card">
+    <div (click)="openDialog()" >
+        <div class="image-background">
+            <img *ngIf="project.mainImage" src="{{project.mainImage.url}}" alt="">
+        </div>
+        <div class="overlay">
+            <mat-card-title>
+                <h2 class="accent-font primary-text">{{project.name}}</h2>
+            </mat-card-title>
+            <mat-card-subtitle>
+                <h3 class="accent-font accent-text">{{project.client}}</h3>
+            </mat-card-subtitle>
+            <mat-card-content>
+                <p class="card-text">{{project.description}}</p>
+            </mat-card-content>
+        </div>
+    </div>
+</mat-card>

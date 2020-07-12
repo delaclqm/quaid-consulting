@@ -1,0 +1,74 @@
+<div id="contact" class="container">
+    <div class="row">
+        <div class="col-xs-12 center-xs">
+        <h1 class="accent-font primary-text">Let's Get In Touch.</h1>
+        </div>
+    </div>
+    <form class="form" [formGroup]="form" #formDirective="ngForm"
+    (ngSubmit)="onSubmit(form.value, formDirective)">
+        <mat-spinner *ngIf="isLoading"></mat-spinner>
+        <div [ngClass]="{'loading': isLoading}">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>First name</mat-label>
+                        <input type="text" formControlName="firstName" matInput>
+                        <mat-error *ngIf="form.controls.firstName.hasError('required')">
+                            First Name is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Last name</mat-label>
+                        <input type="text" formControlName="lastName" matInput>
+                        <mat-error *ngIf="form.controls.lastName.hasError('required')">
+                            Last Name is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>E-Mail</mat-label>
+                        <input type="email" formControlName="email" matInput>
+                        <mat-error *ngIf="form.controls.email.hasError('required')">
+                            E-Mail is <strong>required</strong>
+                        </mat-error>
+                        <mat-error
+                            *ngIf="form.controls.email.hasError('email') && !form.controls.email.hasError('required')">
+                            Please enter a valid email address
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Phone Number</mat-label>
+                        <input type="tel" formControlName="phone" matInput>
+                        <mat-error *ngIf="form.controls.phone.hasError('required')">
+                            Phone Number is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Message or Project Description</mat-label>
+                        <textarea matInput formControlName="message"></textarea>
+                        <mat-error *ngIf="form.controls.message.hasError('required')">
+                            Message is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 center-xs button-group">
+                    <button mat-raised-button color="accent" type="submit">Submit</button>
+                    <button mat-stroked-button color="accent" type="reset">Clear</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

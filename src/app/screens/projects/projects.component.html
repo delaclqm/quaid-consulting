@@ -1,0 +1,10 @@
+<div id="projects" class="container">
+    <div class="row">
+        <div class="col-xs-12 center-xs">
+            <h1 class="accent-font primary-text">Here are my passions.</h1>
+        </div>
+        <div *ngFor="let project of projects" class="col-xs-12 col-md-6 col-lg-6">
+            <app-project-card [project]="project"></app-project-card>
+        </div>
+    </div>
+</div>

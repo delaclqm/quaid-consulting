@@ -1,0 +1,41 @@
+<nav>
+    <div class="navbar-overlay"></div>
+    <div class="navbar">
+        <span (click)="onToggle()" class="hamburger action">
+            <i id="hamburger-button" class="material-icons">menu</i>
+        </span>
+        <span class="divide"></span>
+        <span class="logo accent-font">
+            Quaid DeLacluyse
+        </span>
+        <span class="divide"></span>
+        <span class="action"></span>
+    </div>
+    <div class="global-menu">
+        <div class="global-menu__wrap">
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#">Home</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#experience">Experience</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#projects">Projects</a>
+            <a (click)="onToggle()"[ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#contact">Contact Me</a>
+        </div>
+    </div>
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#69f0ae" />
+                <stop offset="100%" stop-color="#a4f3cc" />
+            </linearGradient>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#64b5f6" />
+                <stop offset="100%" stop-color="##b5deff" />
+            </linearGradient>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#3e6351" />
+                <stop offset="100%" stop-color="#2f5a7d" />
+            </linearGradient>
+        </defs>
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+    </svg>
+</nav>

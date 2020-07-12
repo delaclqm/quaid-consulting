@@ -1,0 +1,49 @@
+
+<div class="title">
+    <div class="exit-button" (click)="onNoClick()">
+        <i class="material-icons">close</i>
+    </div>
+    <img class="image-overlay" src="{{data.mainImage.url}}" alt="Image of Project">
+    <div class="overlay">
+        <span class="spacer"></span>
+        <h2 mat-dialog-title class="accent-font primary-text"><b>{{data.name}}</b></h2>
+        <h3 class="accent-font accent-text">{{data.client}}</h3>
+    </div>
+    <a href="{{data.link}}">
+        <i class="material-icons primary site-link">link</i>
+    </a>
+    <a href="{{data.githubLink}}">
+        <i class="fab fa-github github accent black-text"></i>
+    </a>
+</div>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="row">
+            <div class="col-xs-12">
+                <h4 class="accent-font">Project Description</h4>
+            </div>
+            <div class="col-xs-12">
+                <p>{{data.description}}</p>
+            </div>
+        </div>
+        </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="accent-font">Main Technology Stack</h4>
+            </div>
+            <div *ngFor="let image of data.techImages" class="col-xs-3 col-md-4">
+                <img class="full-width" src="{{image.url}}" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-xs-12 center-xs button-group">
+        
+    </div>
+</div>
