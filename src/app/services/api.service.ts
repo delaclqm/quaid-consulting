@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  public endpoint = 'https://resume-site-api.herokuapp.com/';
+  public endpoint = 'https://quaid-consulting-api.herokuapp.com/';
 
   constructor(private http : HttpClient) { }
 
