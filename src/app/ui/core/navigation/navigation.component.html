@@ -1,16 +1,42 @@
 <nav>
-    <div class="navbar-overlay"></div>
-    <div class="navbar">
-        <span (click)="onToggle()" class="hamburger action">
-            <i id="hamburger-button" class="material-icons">menu</i>
-        </span>
-        <span class="divide"></span>
-        <span class="logo accent-font">
+    <!-- Desktop Nav -->
+    <div class="navbar desktop-nav">
+        <div class="logo accent-font">
             Quaid DeLacluyse
-        </span>
-        <span class="divide"></span>
-        <span class="action"></span>
+        </div>
+        <div class="divide"></div>
+        <div class="nav-links accent-font">
+            <div>
+                Home
+            </div>
+            <div>
+                Portfolio
+            </div>
+            <div>
+                About Us
+            </div>
+            <div>
+                Contact Us
+            </div>
+        </div>
     </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="navbar-overlay"></div>
+        <div class="navbar">
+            <span (click)="onToggle()" class="hamburger action">
+                <i id="hamburger-button" class="material-icons">menu</i>
+            </span>
+            <span class="divide"></span>
+            <span class="logo accent-font">
+                Quaid DeLacluyse
+            </span>
+            <span class="divide"></span>
+            <span class="action"></span>
+        </div>
+    </div>
+
+    <!-- SVG PATHS AND MOBILE NAV LINKS -->
     <div class="global-menu">
         <div class="global-menu__wrap">
             <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#">Home</a>

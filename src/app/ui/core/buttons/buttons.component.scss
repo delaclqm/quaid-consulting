@@ -1,0 +1,48 @@
+// a {
+// 	line-height: 2.5em !important;
+// 	margin-top: .3em;
+// 	font-size: 1em;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+// 	transition: 0.5s;
+// 	&:hover{
+// 		transform: scaleY(110%);
+// 		margin-bottom: 2px;
+// 		margin-top: -2px;
+// 	}
+// }
+
+// Basic button styles
+a {
+	text-decoration: none;
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+	color: #ffffff;
+	//border-radius: 1px;
+	transition: 0.25s;
+	border-color: #69f0ae;
+
+	&:hover,
+  	&:focus { 
+    	border-color: #64b5f6;
+    	color: #fff;
+  	}
+  }
+  
+
+.offset {  
+	box-shadow: 
+	  0.3em 0.3em 0 0 #69f0ae,
+	  inset 0.3em 0.3em 0 0 #69f0ae;
+	
+	&:hover,
+	&:focus {
+	  box-shadow: 
+		0 0 0 0 #64b5f6,
+		inset 6em 3.5em 0 0 #64b5f6;
+	}
+  }

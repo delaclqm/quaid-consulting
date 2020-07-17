@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { getShortDate } from 'src/app/utils/date-utils';
+import { getShortDate } from 'src/app/services/utils/date-utils';
 
 @Component({
   selector: 'app-timeline-block',

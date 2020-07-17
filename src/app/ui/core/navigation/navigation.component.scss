@@ -9,6 +9,10 @@
   flex-direction: row;
   height: 64px;
   align-items: center;
+
+  &.desktop-nav {
+    padding: 0px 20px;
+  }
 }
 
 .navbar-overlay {
@@ -25,6 +29,17 @@ nav {
   top: 0;
   z-index: 100;
   width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  div {
+    margin: 15px;
+  }
 }
 
 .logo {
@@ -122,4 +137,16 @@ nav {
 
 .divide {
   flex: auto;
+}
+
+@media only screen and (min-width: 75em){
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 75em){
+  .desktop-nav {
+    display: none;
+  }
 }

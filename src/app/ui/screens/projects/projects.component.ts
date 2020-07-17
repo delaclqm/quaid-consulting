@@ -19,7 +19,6 @@ export class ProjectsComponent implements OnInit {
     this.subscription.add(
       this.api.getProjects().subscribe((data) => {
         this.projects = data;
-        console.log(data);
       })
     );
   }

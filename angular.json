@@ -28,9 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/my-theme.scss",
-              "src/styles.scss",
-              "src/flexboxgrid.min.css",
+              "src/styles/my-theme.scss",
+              "src/styles/styles.scss",
+              "src/styles/flexboxgrid.min.css",
               "src/assets/font-awesome/css/all.min.css"
             ],
             "scripts": []
@@ -97,7 +97,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           }
