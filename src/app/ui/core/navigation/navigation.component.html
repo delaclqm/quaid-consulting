@@ -1,22 +1,22 @@
 <nav>
     <!-- Desktop Nav -->
     <div class="navbar desktop-nav">
-        <div class="logo accent-font">
-            Quaid DeLacluyse
+        <div class="logo-container">
+            <img class="logo" src="assets/logos/qc-logo_white_no-bg_wide.png" alt="Quaid Consulting Logo">
         </div>
         <div class="divide"></div>
         <div class="nav-links accent-font">
             <div>
-                Home
+                <a href="">Home</a>
             </div>
             <div>
-                Portfolio
+                <a href="">Portfolio</a>
             </div>
             <div>
-                About Us
+                <a href="">About Us</a>
             </div>
             <div>
-                Contact Us
+                <a href="">Contact Us</a>
             </div>
         </div>
     </div>
@@ -28,21 +28,21 @@
                 <i id="hamburger-button" class="material-icons">menu</i>
             </span>
             <span class="divide"></span>
-            <span class="logo accent-font">
-                Quaid DeLacluyse
-            </span>
+            <a class="logo-container" href="/">
+                <img class="logo" src="assets/logos/qc-logo_white_no-bg_wide.png" alt="Quaid Consulting Logo">
+            </a>
             <span class="divide"></span>
             <span class="action"></span>
         </div>
     </div>
 
     <!-- SVG PATHS AND MOBILE NAV LINKS -->
-    <div class="global-menu">
+    <div class="global-menu" [ngClass]="{'no-events': !this.isOpened}">
         <div class="global-menu__wrap">
             <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#">Home</a>
-            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#experience">Experience</a>
-            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#projects">Projects</a>
-            <a (click)="onToggle()"[ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#contact">Contact Me</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#experience">Portfolio</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#projects">About Us</a>
+            <a (click)="onToggle()"[ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#contact">Contact Us</a>
         </div>
     </div>
     <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
