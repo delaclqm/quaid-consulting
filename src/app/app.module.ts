@@ -7,9 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './ui/core/navigation/navigation.component';
 import { FooterComponent } from './ui/core/footer/footer.component';
-import { IntroComponent } from './ui/screens/intro/intro.component';
+import {AboutComponent} from './ui/screens/about/about.component';
 import { SocialMediaLinksComponent } from './ui/core/social-media-links/social-media-links.component';
-import { AboutComponent } from './ui/screens/intro/about/about.component';
 import { ExperienceComponent } from './ui/screens/experience/experience.component';
 import { ProjectsComponent } from './ui/screens/projects/projects.component';
 import { ContactComponent } from './ui/screens/contact/contact.component';
@@ -30,7 +29,6 @@ import { PortfolioComponent } from './ui/screens/portfolio/portfolio.component';
     FooterComponent,
     HomeComponent,
     PortfolioComponent,
-    IntroComponent,
     SocialMediaLinksComponent,
     AboutComponent,
     ExperienceComponent,

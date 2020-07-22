@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../ui/screens/home/home.component';
 import { PortfolioComponent } from '../ui/screens/portfolio/portfolio.component';
 import { ContactComponent } from '../ui/screens/contact/contact.component';
-import { AboutComponent } from '../ui/screens/intro/about/about.component';
+import { AboutComponent } from '../ui/screens/about/about.component';
 
 const routes: Routes = [
   {
