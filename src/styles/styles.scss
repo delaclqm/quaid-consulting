@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 html, body {
   background-color: #303030;
   color: #ffffff;
@@ -113,6 +115,10 @@ div.mat-ripple-element {
 }
 
 /* SVG SHAPE COLORS */
+#gradient1 {--color-stop: #9FC490; --color-bot: #C0DFA1;}
+#gradient2 {--color-stop: #465362; --color-bot: #82a3a1;}
+#gradient3 {--color-stop: #011936; --color-bot: #465362;}
+
 .shape-overlays {
   width: 100vw;
   height: 100vh;
