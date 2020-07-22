@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './ui/core/navigation/navigation.component';
 import { FooterComponent } from './ui/core/footer/footer.component';
-import {AboutComponent} from './ui/screens/about/about.component';
+import { AboutComponent } from './ui/screens/about/about.component';
 import { SocialMediaLinksComponent } from './ui/core/social-media-links/social-media-links.component';
 import { ExperienceComponent } from './ui/screens/experience/experience.component';
 import { ProjectsComponent } from './ui/screens/projects/projects.component';

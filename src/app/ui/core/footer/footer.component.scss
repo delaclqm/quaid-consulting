@@ -1,4 +1,26 @@
-.page-footer .footer-copyright {
+@import '../../../../styles/variables.scss';
+
+.page-footer {
+  background-color: $blue;
+}
+
+.footer {
+  background-color: $blue-darker;
+  .footer-links {
+    max-width: 1800px;
+    margin: auto;
+  }
+}
+
+.logo {
+  margin: 1em;
+  height: 10em;
+  width: auto;
+}
+
+.footer-copyright {
+  max-width: 1800px;
+  margin: auto;
   overflow: hidden;
   min-height: 50px;
   display: -webkit-box;
@@ -9,15 +31,6 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 10px 0px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.3);
-}
-
-.container {
-  margin-top: 0 !important;
 }

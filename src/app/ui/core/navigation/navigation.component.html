@@ -7,10 +7,10 @@
         </div>
         <div class="divide"></div>
         <div class="nav-links accent-font">
-            <a class="desktop-nav-link" href="">Home</a>
-            <a class="desktop-nav-link" href="">Portfolio</a>
-            <a class="desktop-nav-link" href="">About Us</a>
-            <a class="desktop-nav-link" href="">Contact Us</a>
+            <a class="desktop-nav-link" routerLink="/">Home</a>
+            <a class="desktop-nav-link" routerLink="/portfolio">Portfolio</a>
+            <a class="desktop-nav-link" routerLink="/about-us">About Us</a>
+            <a class="desktop-nav-link" routerLink="/contact-us">Contact Us</a>
         </div>
     </div>
     <!-- Mobile Nav -->
@@ -32,10 +32,10 @@
     <!-- SVG PATHS AND MOBILE NAV LINKS -->
     <div class="global-menu" [ngClass]="{'no-events': !this.isOpened}">
         <div class="global-menu__wrap">
-            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#">Home</a>
-            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#experience">Portfolio</a>
-            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#projects">About Us</a>
-            <a (click)="onToggle()"[ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" href="#contact">Contact Us</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" routerLink="/">Home</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" routerLink="/portfolio">Portfolio</a>
+            <a (click)="onToggle()" [ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" routerLink="/about-us">About Us</a>
+            <a (click)="onToggle()"[ngClass]="{'is-opened': this.isOpened}" class="menu-item accent-font" routerLink="/contact-us">Contact Us</a>
         </div>
     </div>
     <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
