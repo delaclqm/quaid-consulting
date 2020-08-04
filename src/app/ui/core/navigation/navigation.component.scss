@@ -88,7 +88,6 @@ nav {
 }
 
 
-
 /* Top Navigation Style */
 .global-menu {
   width: 100vw;
@@ -111,7 +110,8 @@ nav {
 .menu-item {
   color: #ffffff;
   font-size: 3.5vmax;
-  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   opacity: 0;
   transform: translateY(-100%);
   pointer-events: none;
